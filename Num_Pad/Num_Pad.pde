@@ -10,19 +10,19 @@ int numPadColumns = 3;
 float [] x = new float [numPadColumns];
 int numPadRow = 5;
 float[] y = new float [numPadRow];
+float border=0.0;
 //
 void setup() {
-  size (450, 900);
-  appWidth = width;
-  appHeight = height;
+  size (450, 900); appHeight = height;
   //
   //Population of rect() variables
   widthSquare = appWidth*1/4;
   heightSquare = widthSquare;
-  //Error with PrintArray, FIX
-  for (int i=0; i<numPadColumns; i++ ) { // i stops for x not y
-     x[i] = widthSquare*(2*i*1)/2;
-     println("Inside x", x[i] );
+     if ( widthSquare*8 <= appHeight ) {
+     println("true")
+     // Empty IF
+     } else {
+       println("false");
     } //End FOR
     for ( int i=0; i<numPadRows; i++ ) {
       y[i] = widthSquare*(2*i*5)/2;
