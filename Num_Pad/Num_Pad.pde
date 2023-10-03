@@ -14,26 +14,13 @@ float border=0.0;
 //
 void setup() {
   size (450, 900); appHeight = height;
+  appWidth = width;
+  appHeight = height;
   //
   //Population of rect() variables
   widthSquare = appWidth*1/4;
   heightSquare = widthSquare;
-     if ( widthSquare*8 <= appHeight ) {
-     println("true")
-     // Empty IF
-     } else {
-       println("false");
-    } //End FOR
-    for ( int i=0; i<numPadRows; i++ ) {
-      y[i] = widthSquare*(2*i*5)/2;
-      println("Inside y", y[i] );
-    } //End FOR
-    //
-    //if(i<nummPadColumns)
-  //
-  printArray(x);
-  printArray(y);
-  /*
+  /* Primative Variable Prototyping
   x0 = widthSquare*1/2;
   x1 = widthSquare*3/2;
   x2 = widthSquare*5/2;
@@ -43,7 +30,7 @@ void setup() {
   y3 = widthSquare*11/2;
   y4 = widthSquare*14/2;
   */
-  //Nested FOR, reading rect() arrays
+  /* Seperate FOR Loops
   //
 } //End setup
 //
